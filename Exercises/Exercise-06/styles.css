@@ -1,0 +1,47 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: beige;
+  overflow: hidden;
+}
+
+.animation-container {
+  display: grid;
+  grid-template-columns: repeat(3, 500px); 
+  grid-template-rows: repeat(3, 50px);
+  gap: 30px;
+}
+
+
+.rectangle {
+  width: 400px; 
+  height: 40px; 
+  background-color: yellow;
+  animation: moveAndColorChange 4s ease-in-out infinite;
+}
+
+
+@keyframes moveAndColorChange {
+  0% {
+    transform: translate(0, 0) rotate(0deg); 
+    background-color: black; 
+  }
+  25% {
+    transform: translate(300px, -100px) rotate(45deg);
+    background-color: darkyellow; 
+  }
+  50% {
+    transform: translate(300px, 100px) rotate(90deg); 
+    background-color: darkred; 
+  }
+  75% {
+    transform: translate(0, 100px) rotate(135deg); 
+  }
+  100% {
+    transform: translate(0, 0) rotate(180deg); 
+    background-color: darkyellow; 
+}
