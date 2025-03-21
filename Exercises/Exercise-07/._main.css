@@ -27,6 +27,27 @@ display: flex;
 gap: 0px;
 }
 
+.cloud::after {
+content: "";
+position: absolute;
+width: 40px;
+height: 40px;
+background-color: #e0e0e0;
+border-radius: 50%;
+top: -25px;
+left: 10px;
+}
+
+.cloud::after {
+content: "";
+position: absolute;
+width: 40px;
+height: 40px;
+background-color: #e0e0e0;
+border-radius: 50%;
+top: -25px;
+left: 5px;
+}
 
 .bubble {
 width: 40px;
