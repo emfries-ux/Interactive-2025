@@ -1,0 +1,62 @@
+body {
+Display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: whitesmoke;
+overflow: hidden;
+position: relative;
+flex-wrap: wrap;
+gap: 10px;
+}
+        
+.vase {
+width: 200px;
+height: 200px;
+background: radial-gradient(circle at 50% 60%, #whitesmoke, #white);
+border-radius: 50% 50% 40% 40% / 60% 60% 100% 100%;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+position: relative;
+}
+
+.vase2 {
+width: 100px;
+height: 100px;
+background: radial-gradient(circle at 50% 60%, #whitesmoke, #white);
+border-radius: 50% 50% 40% 40% / 60% 60% 100% 100%;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+position: relative;
+animation: float 1s infinite ease-in-out;
+}
+
+.floating-image {
+position: absolute;
+width: 200px;
+height: 200px;
+border-radius: 20%;
+animation: float 1s infinite ease-in-out;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-weight: light;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.floating-image img {
+width: 20%;
+height: 20%;
+object-fit: cover;
+border-radius: 100%;
+}
+
+
+@keyframes float {
+0% { transform: translateY(0); opacity: 1; }
+50% { transform: translateY(-20px); opacity: 0.8; }
+100% { transform: translateY(0); opacity: 1; }
+}
+.image1 { top: 10%; left: 20%; animation-delay: 0s; }
+.image2 { top: 30%; right: 20%; animation-delay: 1s; }
+.image3 { bottom: 20%; left: 50%; animation-delay: 2s; }
+
+

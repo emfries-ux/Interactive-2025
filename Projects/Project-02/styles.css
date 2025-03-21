@@ -1,0 +1,52 @@
+body{ 
+justify-content: center;
+align-items: UP;
+height: 1000vh;
+background-color: lightpink;
+}
+
+img{
+   width: 500px;
+height: 500px; 
+}
+
+.gallery {
+gap:200px;
+animation: scroll 12s linear infinite;
+}
+
+.image-container {
+border-radius: 900px;
+}
+        
+.image-container img {
+display: inline;
+object-fit: cover;
+opacity: 100;
+filter: 
+hue-rotate(180deg) brightness(1.0) contrast(1.1);
+animation: fade 6s infinite alternate;
+}
+
+
+@keyframes fade {
+0% { opacity: 0; }
+50% { opacity: 6; }
+100% { opacity: 0; }
+}
+        
+@keyframes scroll {
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
+}
+
+
+ 
+@keyframes scroll {
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
+}
+
+.image-container:hover h3 {
+    color: ORANGE;   
+}
