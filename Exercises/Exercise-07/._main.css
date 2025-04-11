@@ -35,26 +35,17 @@ height: 40px;
 background-color: #e0e0e0;
 border-radius: 50%;
 top: -25px;
-left: 10px;
+left: 20px;
 }
 
-.cloud::after {
-content: "";
-position: absolute;
-width: 40px;
-height: 40px;
-background-color: #e0e0e0;
-border-radius: 50%;
-top: -25px;
-left: 5px;
-}
+
 
 .bubble {
 width: 40px;
 height: 40px;
 background-color: #ddd;
 border-radius: 60%;
-gap: 0px;
+gap: -5px;
 }
 .cat {
 position: absolute;
